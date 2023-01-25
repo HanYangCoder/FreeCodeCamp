@@ -1,0 +1,54 @@
+label, input, select {
+    display: block;
+}
+label {
+    margin-bottom: 0.5rem;
+}
+input, select {
+    margin-bottom: 1.25rem;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+body {
+    background: #cfd5ff;
+}
+form {
+    background: #2e46b4;
+    padding: 25px;
+    color: #ffffff;
+    border-radius: 0.25rem;
+}
+.main-container {
+    max-width: 700px;
+    margin: 30px auto auto;
+}
+.inline {
+    display: inline;
+}
+.smaller-text,input, select, textarea {
+    font-size: 14px;
+}
+input, select, textarea {
+    border-radius: 0.25rem;
+    border: 1px solid #adadad;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-bottom: 1rem;
+    margin-right: 10px;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+input[type="text"], input[type="email"], input[type="number"], select, textarea, .submit {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    padding: 5px;
+}
+.submit {
+    font-size: 18px;
+    margin-top: 15px;
+    background-color: #37af65;
+    border: 1px solid #37af65;
+    border-radius: 0.25rem;
+}

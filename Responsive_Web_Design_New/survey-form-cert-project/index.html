@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main-container">
+        <header>
+          <h1 id="title">Hans Christian's Cool Survey Form</h1>
+          <p id="description">Please tell me what do you think is cool about our site and what we could do better!</p>
+        </header>
+
+        <form id="survey-form">
+          
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+          </div>
+  
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+          </div>
+  
+          <div class="form-group">
+            <label id="number-label" for="name">Number</label>
+            <input id="number" type="number" min="10" max="100" placeholder="Enter your number" required>
+          </div>
+
+          <div class="form-group">
+            <p>What field of work are you currently in?</p>
+            <select id="dropdown">
+              <option value="it-related">IT related</option>
+              <option value="non-it-related">Non IT related</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>How would you rate our site?</p>
+            <label for="its-great"><input id="its-great" class="inline" name="site-rating" value="great" type="radio">It's great!</label>
+            <label for="looks-good"><input id="looks-good" class="inline" name="site-rating" value="good" type="radio">Looks good!</label>
+            <label for="needs-improvement"><input id="needs-improvement" class="inline" name="site-rating" value="needs-improvement" type="radio">Needs more improvement</label>
+          </div>
+
+          <div class="form-group">
+            <p>What would you like to learn next? <span class="smaller-text">(Check all that apply)</span></p>
+            <label for="front-end"><input id="front-end" type="checkbox" class="inline" name="learn-next" value="front-end">Front-end development</label>
+            <label for="back-end"><input id="back-end" type="checkbox" class="inline" name="learn-next" value="back-end">Back-end development</label>
+            <label for="databases"><input id="databases" type="checkbox" class="inline" name="learn-next" value="databases">Databases</label>
+          </div>
+
+          <div class="form-group">
+            <p>Do you have any other comments and suggestions? Please feel free to comment below.</p>
+            <textarea id="comments" name="comments" rows="5" cols="60" placeholder="Write your comments here..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <button id="submit" class="submit" type="submit">Submit</button>
+          </div>
+
+        </form>
+    </div>
+  </body>
+</html>
